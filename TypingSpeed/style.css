@@ -1,0 +1,115 @@
+
+body {
+      background: url("Gradient\ landscape\ design\ background\ _\ Free\ Vector.jpeg");
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+#speedTypingTest {
+      max-width: 650px;
+      width: 100%;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.8s ease-in-out;
+      transition: transform 0.2s;
+    }
+#speedTypingTest:hover {
+      transform: translateY(-5px);
+    }
+
+#timer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #c020c0;
+      animation: pulse 1.2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.85; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+#quoteDisplay {
+      font-size: 25px;
+      color: #E7DBEF;
+      min-height: 60px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+ 
+.fade-in {
+      animation: fadeIn 0.4s ease-in-out forwards;
+    }
+.fade-out {
+      animation: fadeOut 0.4s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; transform: scale(1); }
+      to { opacity: 0; transform: scale(0.95); }
+    }
+
+ textarea {
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      color: #fff;
+      resize: none;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+.btn-glow {
+      transition: all 0.3s ease;
+      border-radius: 25px;
+      padding: 8px 20px;
+      border: none;
+      color: white;
+    }
+.btn-success {
+      background: linear-gradient(135deg, #a94cff, #7d2cff);
+    }
+.btn-warning {
+      background: linear-gradient(135deg, #ff8f70, #ff4e70);
+    }
+.btn-glow:hover {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      transform: translateY(-2px);
+    }
+#result {
+      font-size: 18px;
+      font-weight: bold;
+      min-height: 30px;
+      transition: all 0.3s ease-in-out;
+    }
+.success {
+      color: #6E3482;
+      animation: pop 0.3s ease-in-out;
+    }
+.error {
+      color: #ff6b6b;
+      animation: shake 0.3s ease-in-out;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
